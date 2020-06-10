@@ -1,16 +1,17 @@
 #navigation {
     width: 100%; 
     height: 3rem;
-    background-color: rgba(218, 190, 179, 0.164);
+    background-color: $low-opacity;
     display: flex;
     justify-content: center;
     z-index: 100;
+    position: fixed;
 
     a {
         font-size: 12px;
-        font-weight: 400;
+        color: $font-color2;
+        font-weight: 500;
         letter-spacing: 3px;
-        color: white;
         margin-left: 3rem;
         margin-top: 1rem;
         text-decoration: none;
