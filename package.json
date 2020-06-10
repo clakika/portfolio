@@ -4,10 +4,18 @@
   "description": "personal portfolio",
   "main": "website.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style.css"
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clakika/portfolio.git"
   },
   "author": "Claudia K. Cappai",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/clakika/portfolio/issues"
+  },
+  "homepage": "https://github.com/clakika/portfolio#readme",
   "devDependencies": {
     "node-sass": "^4.14.1"
   }

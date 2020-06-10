@@ -1,0 +1,15 @@
+#section-home {
+    background-color: lightseagreen;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 112vh;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+    top: 0;
+
+    &__heading-box {
+        width: 10rem;
+        background-color: rebeccapurple;
+    }
+}

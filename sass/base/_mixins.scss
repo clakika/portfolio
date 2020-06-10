@@ -1,0 +1,10 @@
+@mixin subSectionText {
+    font-size: 15px;
+    color: $font-color2; 
+}
+
+@mixin sectionTitle {
+    font-size: 18px; 
+    color: $font-color2; 
+    letter-spacing: 3px;
+}
