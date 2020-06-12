@@ -1,9 +1,20 @@
-/*var buttonEffect = document.querySelector(".btn");
+function underlineCurrentSectionName() {
+    var navigationLinks = document.querySelectorAll(".navigation__link");
 
-buttonEffect.addEventListener('click', function(){
-    //buttonEffect.style.transform = "translateY(-30px)" + "scale(1.09)";
-    console.log("Hello");
-    buttonEffect.classList.add("click");
-});
+    for (var i=0; i < navigationLinks.length; i++) {
+        navigationLinks[i].addEventListener('click', function(){
+            underlineCurrentSection(this);
+        });
+    }
+    
+    function underlineCurrentSection(currentLink) {
+        for (var i=0; i < navigationLinks.length; i++) {
+            navigationLinks[i].classList.remove('currentSection');
+        }
+    
+        currentLink.classList.add('currentSection');
+    };
+}
 
-console.log("Hello");*/
+underlineCurrentSectionName();
+
