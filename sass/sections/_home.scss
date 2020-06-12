@@ -2,12 +2,15 @@
     background-image: url("/img/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: top;
     height: 112vh;
     width: 100%;
     z-index: 1;
     top: 0;
+    position: relative;
     display: flex;
     justify-content: center;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 83%, 0 100%);
 }
 
     #heading-box {

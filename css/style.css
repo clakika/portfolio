@@ -12,16 +12,23 @@ body {
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif; }
 
+body, html {
+  min-height: 100%;
+  min-width: 100%; }
+
 #section-home {
   background-image: url("/img/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: top;
   height: 112vh;
   width: 100%;
   z-index: 1;
   top: 0;
+  position: relative;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 83%, 0 100%); }
 
 #heading-box {
   background-color: rgba(255, 255, 255, 0.36);
@@ -45,10 +52,11 @@ body {
   height: 112vh;
   width: 100%;
   z-index: 1;
-  top: 0;
+  margin-top: -19vh;
+  position: relative;
   display: flex;
   flex-direction: column;
-  position: relative; }
+  clip-path: polygon(0 17%, 50% 0, 100% 17%, 100% 100%, 50% 83%, 0 100%); }
 
 .section-title {
   font-size: 25px;
@@ -92,10 +100,11 @@ body {
   height: 112vh;
   width: 100%;
   z-index: 1;
-  top: 0;
   display: flex;
   flex-direction: column;
-  position: relative; }
+  margin-top: -20vh;
+  position: relative;
+  clip-path: polygon(0 17%, 50% 0, 100% 17%, 100% 100%, 50% 83%, 0 100%); }
 
 .section-title {
   font-size: 25px;
@@ -182,12 +191,13 @@ body {
   height: 112vh;
   width: 100%;
   z-index: 1;
-  top: 0;
   display: flex;
   flex-direction: column;
   position: relative;
+  margin-top: -20vh;
   justify-content: center;
-  align-content: center; }
+  align-content: center;
+  clip-path: polygon(50% 0, 100% 17%, 100% 100%, 0 100%, 0 17%); }
 
 .project {
   display: grid;
@@ -242,18 +252,20 @@ body {
 
 #section-contacts {
   background-color: #dabeb3;
-  height: 30vh;
+  min-height: 12vh;
   width: 100%;
   z-index: 1;
-  top: 0;
+  bottom: 0;
   display: flex;
+  margin-top: -5vh;
   flex-direction: column;
   position: relative;
   justify-content: center;
-  align-content: center; }
+  align-content: center;
+  clip-path: polygon(50% 0, 100% 17%, 100% 100%, 0 100%, 0 17%); }
 
 #contacts-title {
-  font-size: 20px;
+  font-size: 18px;
   color: #6a3621;
   letter-spacing: 6px;
   font-weight: 600;
@@ -265,14 +277,16 @@ body {
   width: 100%;
   list-style-type: none;
   display: grid;
-  grid-template-rows: 2rem 5rem;
+  max-height: 14vh;
+  grid-template-rows: 2rem 2rem;
   grid-template-columns: 22.5% 25% 15% 15% 22.5%;
   justify-content: center;
   align-content: center;
-  grid-row-gap: 5rem; }
+  grid-row-gap: 2rem; }
   .contacts__1 {
     grid-row: 2/3;
-    grid-column: 2/3; }
+    grid-column: 2/3;
+    text-align: center; }
   .contacts__2 {
     grid-row: 2/3;
     grid-column: 3/4; }
@@ -282,7 +296,6 @@ body {
   .contacts__element {
     color: #6a3621; }
   .contacts__element-text {
-    text-transform: uppercase;
     font-size: 13px; }
   .contacts__element-icon {
     margin-right: 0.4rem; }
@@ -293,7 +306,6 @@ body {
 .copyright {
   color: #535050;
   font-size: 12px;
-  width: auto;
   align-self: center;
   margin-bottom: 1rem; }
 
