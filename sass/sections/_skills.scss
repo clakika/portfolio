@@ -9,6 +9,10 @@
     position: relative;
     clip-path: polygon(0 17%, 50% 0, 100% 17%, 100% 100%, 50% 83%, 0 100%);
 
+    @include respond(tab-land) {
+        height: 92vh;
+    }
+
 }
 
 .section-title {
@@ -31,6 +35,10 @@
     &__image {
         font-size: 6rem;
         color: $primary-dark;
+
+        @include respond(tab-medium) {
+            font-size: 4rem;
+        }
     }
 
 

@@ -1,5 +1,12 @@
 #section-home {
-    background-image: url("/img/background.jpg");
+    /*background-image: url("/img/background.jpg");*/
+    background-image: linear-gradient(to right bottom, 
+                            
+                            rgb(202, 165, 150),
+                            rgb(218, 190, 179),
+                            rgb(230, 211, 204),
+                            rgb(240, 223, 218),
+                            rgb(247, 231, 228));
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -12,6 +19,10 @@
     justify-content: center;
     align-content: center;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 83%, 0 100%);
+
+    @include respond(tab-land) {
+        height: 92vh;
+    }
 }
 
     #heading-box {

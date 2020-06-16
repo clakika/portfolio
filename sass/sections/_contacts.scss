@@ -29,26 +29,49 @@
     display: grid;
     max-height: 14vh;
     grid-template-rows: 2rem 2rem;
-    grid-template-columns: 30% 20% 20% 30%;
+    grid-template-columns: 40% 10% 10% 40%;
     grid-row-gap: 2rem;
+    grid-column-gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
 
     &__1 {
         grid-row: 2/3;
         grid-column: 2/3;
+        text-align: center;
+        transition: all .3s;
 
+        &:hover {
+          transform: translateY(-5px);
+        }
     }
 
     &__2 {
         grid-row: 2/3;
         grid-column: 3/4;
+        align-self: center;
+        text-align: center;
+        transition: all .3s;
+
+
+        &:hover {
+            transform: translateY(-5px);
+          }
     }
+
 
     &__element {
         color: $font-color2;
+
     }
 
     &__element-text {
         font-size: 13px;
+        transition: all .3s;
+
+        &:hover {
+            font-size: 15px;
+        }
     }
 
     &__element-icon {
@@ -66,5 +89,6 @@
     font-size: 12px;
     align-self: center;
     margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 

@@ -11,6 +11,9 @@
     align-content: center;
     clip-path: polygon(50% 0, 100% 17%, 100% 100%, 0 100%, 0 17%);
 
+    @include respond(tab-land) {
+        height: 92vh;
+    }
 }
 
 .project {
@@ -19,11 +22,33 @@
     align-content: center;
     grid-template-columns: 2rem 20rem 20rem 20rem 20rem 2rem;
     grid-template-rows: 10% 80% 10%;
-    
+
+    @include respond(tab-land) {
+        grid-template-columns:10rem 10rem 10rem 10rem;
+        grid-column-gap: 7rem;
+
+    }
+
+    @include respond(tab-medium) {
+        grid-template-columns:5rem 5rem 5rem 5rem;
+        grid-column-gap: 10rem;
+        margin-right: 3rem;
+    }
+
     &__box {
         background-color: $low-opacity;
         width: 15rem;
-        height: 15rem;
+        height: 15rem;  
+
+        @include respond(tab-land) {
+            width: 12rem;
+            height: 12rem; 
+        }
+
+        @include respond(tab-medium) {
+            width: 9rem;
+            height: 9rem; 
+        }
     }
 
     &__text {
@@ -48,12 +73,44 @@
         padding: 10px;
         cursor: pointer;
         transition: all .3s;
-
     
         &:hover {
             transform: scale(1.08);
             box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.137);
             border: 2px
+        }
+
+        @include respond(tab-land) {
+            margin-top: 1.5rem;
+            margin-right: 0.5rem;
+            color: $font-color2;
+            font-size: 10px;
+            font-weight: 600;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.137);
+            background-color: $primary-lightest;
+            padding: 5px;
+            cursor: pointer;
+            transition: all .3s;
+        }
+
+        @include respond(tab-medium) {
+            margin-top: 1rem;
+            align-self: center;
+            color: $font-color2;
+            font-size: 10px;
+            font-weight: 600;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.137);
+            background-color: $primary-lightest;
+            padding: 5px;
+            cursor: pointer;
+            transition: all .3s;
+            display: flex;
+            display: table-cell;
+            vertical-align: middle;
         }
     }
 
@@ -61,23 +118,43 @@
         grid-row: 2/3;
         grid-column: 2/3;
         margin: 0 auto;
+
+        @include respond(tab-land) {
+            grid-row: 2/3;
+            grid-column: 1/2;
+        }
     }
 
     &__2 {
         grid-row: 2/3;
         grid-column: 3/4;
         margin: 0 auto;
+
+        @include respond(tab-land) {
+            grid-row: 2/3;
+            grid-column: 2/3;
+        }
     }
 
     &__3 {
         grid-row: 2/3;
         grid-column: 4/5;
         margin: 0 auto;
+
+        @include respond(tab-land) {
+            grid-row: 2/3;
+            grid-column: 3/4;
+        }
     }
 
     &__4 {
         grid-row: 2/3;
         grid-column: 5/6;
         margin: 0 auto;
+
+        @include respond(tab-land) {
+            grid-row: 2/3;
+            grid-column: 4/5;
+        }
     }
 }
