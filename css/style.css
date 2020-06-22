@@ -78,6 +78,9 @@ html, body {
   align-self: center;
   position: absolute;
   top: 8.5%; }
+  @media only screen and (max-width: 43.1em) {
+    .section-title {
+      top: 17%; } }
 
 .container-about {
   width: 100%;
@@ -86,20 +89,44 @@ html, body {
   grid-column-gap: 1.5rem;
   grid-template-columns: 2fr 3fr 3fr 2fr;
   grid-template-rows: 25% 50% 25%; }
+  @media only screen and (max-width: 80.88em) {
+    .container-about {
+      grid-template-columns: 1fr 4fr 4fr 1fr; } }
+  @media only screen and (max-width: 56.25em) {
+    .container-about {
+      grid-template-columns: 1.2rem 3fr 3fr 1.2rem; } }
   .container-about__text-box {
     grid-column: 2/3;
     grid-row: 2/3;
     align-self: center;
     text-align: right; }
+    @media only screen and (max-width: 43.1em) {
+      .container-about__text-box {
+        grid-column: 2/span 2;
+        text-align: justify; } }
   .container-about__text {
-    font-size: 13px;
+    font-size: 14px;
     letter-spacing: 1px;
     font-weight: 500;
     color: #6a3621;
     line-height: 2; }
-    @media only screen and (max-width: 68em) {
+    @media only screen and (max-width: 56.25em) {
       .container-about__text {
         font-size: 10px;
+        letter-spacing: 1px;
+        font-weight: 500;
+        color: #6a3621;
+        line-height: 2; } }
+    @media only screen and (max-width: 68em) {
+      .container-about__text {
+        font-size: 11px;
+        letter-spacing: 1px;
+        font-weight: 500;
+        color: #6a3621;
+        line-height: 2; } }
+    @media only screen and (max-width: 80.88em) {
+      .container-about__text {
+        font-size: 12px;
         letter-spacing: 1px;
         font-weight: 500;
         color: #6a3621;
@@ -111,6 +138,9 @@ html, body {
     height: auto;
     border-radius: 50%;
     overflow: hidden; }
+    @media only screen and (max-width: 43.1em) {
+      .container-about__image-shape {
+        display: none; } }
   .container-about__image {
     width: 90%;
     transform: translate(2rem, -2rem); }
@@ -137,6 +167,9 @@ html, body {
   align-self: center;
   position: absolute;
   top: 8.5%; }
+  @media only screen and (max-width: 43.1em) {
+    .section-title {
+      top: 17%; } }
 
 .skill {
   width: 100%;
@@ -227,6 +260,9 @@ html, body {
   @media only screen and (max-width: 80.88em) {
     #section-projects {
       height: 92vh; } }
+  @media only screen and (max-width: 43.1em) {
+    #section-projects {
+      height: 112vh; } }
 
 .project {
   display: grid;
@@ -243,6 +279,17 @@ html, body {
       grid-template-columns: 5rem 5rem 5rem 5rem;
       grid-column-gap: 10rem;
       margin-right: 3rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .project {
+      grid-template-columns: 2rem 2rem 2rem 2rem;
+      grid-column-gap: 9rem;
+      margin-right: 5rem; } }
+  @media only screen and (max-width: 43.1em) {
+    .project {
+      grid-template-columns: 1rem 3rem 1rem;
+      grid-template-rows: 2rem 2rem 2rem 2rem;
+      grid-column-gap: 0rem;
+      grid-row-gap: 17rem; } }
   .project__box {
     background-color: rgba(255, 255, 255, 0.36);
     width: 15rem;
@@ -255,6 +302,14 @@ html, body {
       .project__box {
         width: 9rem;
         height: 9rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .project__box {
+        width: 8rem;
+        height: 8rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .project__box {
+        width: 11rem;
+        height: 11rem; } }
   .project__text {
     color: #6a3621;
     letter-spacing: 3px;
@@ -318,11 +373,19 @@ html, body {
       .project__1 {
         grid-row: 2/3;
         grid-column: 1/2; } }
+    @media only screen and (max-width: 43.1em) {
+      .project__1 {
+        grid-row: 1/2;
+        grid-column: 2/3; } }
   .project__2 {
     grid-row: 2/3;
     grid-column: 3/4;
     margin: 0 auto; }
     @media only screen and (max-width: 80.88em) {
+      .project__2 {
+        grid-row: 2/3;
+        grid-column: 2/3; } }
+    @media only screen and (max-width: 43.1em) {
       .project__2 {
         grid-row: 2/3;
         grid-column: 2/3; } }
@@ -334,6 +397,10 @@ html, body {
       .project__3 {
         grid-row: 2/3;
         grid-column: 3/4; } }
+    @media only screen and (max-width: 43.1em) {
+      .project__3 {
+        grid-row: 3/4;
+        grid-column: 2/3; } }
   .project__4 {
     grid-row: 2/3;
     grid-column: 5/6;
@@ -342,6 +409,10 @@ html, body {
       .project__4 {
         grid-row: 2/3;
         grid-column: 4/5; } }
+    @media only screen and (max-width: 43.1em) {
+      .project__4 {
+        grid-row: 4/5;
+        grid-column: 2/3; } }
 
 #section-contacts {
   background-color: #dabeb3;
@@ -447,6 +518,14 @@ html, body {
     text-decoration: none;
     text-transform: uppercase;
     transition: all .3s; }
+    @media only screen and (max-width: 56.25em) {
+      .navigation__link {
+        font-size: 12px;
+        color: #6a3621;
+        font-weight: 500;
+        letter-spacing: 3px;
+        margin-left: 2rem;
+        margin-top: 1rem; } }
     .navigation__link:hover {
       font-weight: 700;
       font-size: 15px; }
