@@ -291,9 +291,9 @@ html, body {
       grid-column-gap: 0rem;
       grid-row-gap: 17rem; } }
   .project__box {
-    background-color: rgba(255, 255, 255, 0.36);
     width: 15rem;
-    height: 15rem; }
+    height: 15rem;
+    margin-bottom: 2.5rem; }
     @media only screen and (max-width: 80.88em) {
       .project__box {
         width: 12rem;
@@ -310,6 +310,26 @@ html, body {
       .project__box {
         width: 11rem;
         height: 11rem; } }
+  .project__box-1 {
+    width: auto;
+    height: 90%;
+    margin-left: -1.7rem;
+    margin-top: 2rem;
+    transition: all .4s;
+    border-radius: 2%; }
+    .project__box-1:hover {
+      transform: scale(1.07);
+      opacity: 0.6; }
+  .project__box-4 {
+    width: auto;
+    height: 90%;
+    margin-left: -1.7rem;
+    margin-top: 2rem;
+    transition: all .4s;
+    border-radius: 2%; }
+    .project__box-4:hover {
+      transform: scale(1.07);
+      opacity: 0.6; }
   .project__text {
     color: #6a3621;
     letter-spacing: 3px;
@@ -334,6 +354,8 @@ html, body {
       transform: scale(1.08);
       box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.137);
       border: 2px; }
+    .project__btn:active {
+      border: none; }
     @media only screen and (max-width: 80.88em) {
       .project__btn {
         margin-top: 1.5rem;

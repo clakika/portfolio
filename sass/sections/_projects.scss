@@ -52,9 +52,9 @@
     }
 
     &__box {
-        background-color: $low-opacity;
         width: 15rem;
         height: 15rem;  
+        margin-bottom: 2.5rem;
 
         @include respond(tab-land) {
             width: 12rem;
@@ -75,6 +75,38 @@
             width: 11rem;
             height: 11rem; 
         }
+
+
+    }
+
+    &__box-1 {
+        width: auto;
+        height: 90%;
+        margin-left: -1.7rem;
+        margin-top: 2rem;
+        transition: all .4s;
+        border-radius: 2%;
+
+        &:hover {
+            transform: scale(1.07);
+            opacity: 0.6;
+         }
+
+    }
+
+    &__box-4 {
+        width: auto;
+        height: 90%;
+        margin-left: -1.7rem;
+        margin-top: 2rem;
+        transition: all .4s;
+        border-radius: 2%;
+
+        &:hover {
+            transform: scale(1.07);
+            opacity: 0.6;
+         }
+
     }
 
     &__text {
@@ -104,6 +136,10 @@
             transform: scale(1.08);
             box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.137);
             border: 2px
+        }
+
+        &:active {
+            border: none;
         }
 
         @include respond(tab-land) {
@@ -157,6 +193,7 @@
 
 
     }
+
 
     &__2 {
         grid-row: 2/3;
