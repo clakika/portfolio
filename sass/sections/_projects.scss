@@ -1,12 +1,12 @@
+
 #section-projects {
     background-color:$primary-darker;
-    height: 112vh;
+    height: 130vh;
     width: 100%;
     z-index: 1;
     display: flex;
-    flex-direction: column;
-    position: relative;
-    margin-top: -20vh;
+    flex-direction: row;
+    margin-top: -30vh;
     justify-content: center;
     align-content: center;
     clip-path: polygon(50% 0, 100% 17%, 100% 100%, 0 100%, 0 17%);
@@ -21,10 +21,11 @@
 }
 
 .project {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-content: center;
-    grid-template-columns: 2rem 20rem 20rem 20rem 20rem 2rem;
+    align-items: center;
+   /* grid-template-columns: 2rem 20rem 20rem 20rem 20rem 2rem;
     grid-template-rows: 10% 80% 10%;
 
     @include respond(tab-land) {
@@ -49,11 +50,11 @@
         grid-template-rows: 2rem 2rem 2rem 2rem;
         grid-column-gap: 0rem;
         grid-row-gap: 17rem;
-    }
+    }*/
 
     &__box {
-        width: 15rem;
-        height: 15rem;  
+        max-width: 15rem;
+        max-height: 15rem;  
         margin-bottom: 2.5rem;
 
         @include respond(tab-land) {
@@ -77,13 +78,35 @@
         }
 
 
+
+    }
+
+    &__box img {
+        height: auto;
+        width: 10rem;
     }
 
     &__box-1 {
         width: auto;
         height: 90%;
+        /*
         margin-left: -1.7rem;
-        margin-top: 2rem;
+        margin-top: 2rem;*/
+        transition: all .4s;
+        border-radius: 2%;
+
+        &:hover {
+            transform: scale(1.07);
+            opacity: 0.6;
+         }
+
+    }
+
+    &__box-2 {
+        width: 40%;
+        height: 20%;
+       /* margin-left: -1.7rem;
+        margin-top: 2rem;*/
         transition: all .4s;
         border-radius: 2%;
 
@@ -97,8 +120,8 @@
     &__box-4 {
         width: auto;
         height: 90%;
-        margin-left: -1.7rem;
-        margin-top: 2rem;
+       /* margin-left: -1.7rem;
+        margin-top: 2rem;*/
         transition: all .4s;
         border-radius: 2%;
 
@@ -177,7 +200,7 @@
     }
 
     &__1 {
-        grid-row: 2/3;
+        /*grid-row: 2/3;
         grid-column: 2/3;
         margin: 0 auto;
 
@@ -190,13 +213,13 @@
             grid-row: 1/2;
             grid-column: 2/3;
         }
-
+*/
 
     }
 
 
     &__2 {
-        grid-row: 2/3;
+       /* grid-row: 2/3;
         grid-column: 3/4;
         margin: 0 auto;
 
@@ -208,10 +231,11 @@
         @include respond(phone-big) {
             grid-row: 2/3;
             grid-column: 2/3;
-        }
+        }*/
     }
 
     &__3 {
+        /*
         grid-row: 2/3;
         grid-column: 4/5;
         margin: 0 auto;
@@ -224,10 +248,11 @@
         @include respond(phone-big) {
             grid-row: 3/4;
             grid-column: 2/3;
-        }
+        }*/
     }
 
     &__4 {
+        /*
         grid-row: 2/3;
         grid-column: 5/6;
         margin: 0 auto;
@@ -241,5 +266,6 @@
             grid-row: 4/5;
             grid-column: 2/3;
         }
+    }*/
     }
 }
