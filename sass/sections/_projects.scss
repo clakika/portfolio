@@ -1,12 +1,12 @@
 
 #section-projects {
     background-color:$primary-darker;
-    height: 130vh;
+    min-height: 200vh;
     width: 100%;
     z-index: 1;
     display: flex;
     flex-direction: row;
-    margin-top: -30vh;
+    margin-top: -40vh;
     justify-content: center;
     align-content: center;
     clip-path: polygon(50% 0, 100% 17%, 100% 100%, 0 100%, 0 17%);
@@ -197,75 +197,5 @@
             display: table-cell;
             vertical-align: middle;
         }
-    }
-
-    &__1 {
-        /*grid-row: 2/3;
-        grid-column: 2/3;
-        margin: 0 auto;
-
-        @include respond(tab-land) {
-            grid-row: 2/3;
-            grid-column: 1/2;
-        }
-
-        @include respond(phone-big) {
-            grid-row: 1/2;
-            grid-column: 2/3;
-        }
-*/
-
-    }
-
-
-    &__2 {
-       /* grid-row: 2/3;
-        grid-column: 3/4;
-        margin: 0 auto;
-
-        @include respond(tab-land) {
-            grid-row: 2/3;
-            grid-column: 2/3;
-        }
-
-        @include respond(phone-big) {
-            grid-row: 2/3;
-            grid-column: 2/3;
-        }*/
-    }
-
-    &__3 {
-        /*
-        grid-row: 2/3;
-        grid-column: 4/5;
-        margin: 0 auto;
-
-        @include respond(tab-land) {
-            grid-row: 2/3;
-            grid-column: 3/4;
-        }
-
-        @include respond(phone-big) {
-            grid-row: 3/4;
-            grid-column: 2/3;
-        }*/
-    }
-
-    &__4 {
-        /*
-        grid-row: 2/3;
-        grid-column: 5/6;
-        margin: 0 auto;
-
-        @include respond(tab-land) {
-            grid-row: 2/3;
-            grid-column: 4/5;
-        }
-
-        @include respond(phone-big) {
-            grid-row: 4/5;
-            grid-column: 2/3;
-        }
-    }*/
     }
 }
