@@ -1,14 +1,139 @@
-
 #section-projects {
     background-color:$primary-darker;
-    min-height: 200vh;
+    z-index: 1;
+    display: flex;
+    height: 270vh;
+    margin-top: -9rem;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+
+}
+
+.project {
+
+    background-color: crimson;
+    width: 60vw;
+    margin-top: 16rem;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(1, 100%);
+    grid-row-gap: 5rem;
+    grid-template-rows: repeat(4, 1fr);
+
+    &__box img {
+        height: auto;
+        width: 29rem;
+        margin-right: 4rem;
+    }
+
+    &__box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__box-1 {
+        transition: all .4s;
+        border-radius: 2%;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        background-color: cyan;
+
+        &:hover {
+            transform: scale(1.07);
+            opacity: 0.6;
+         }
+
+        &__image {
+            
+        }
+
+        &__technologies {
+           
+        }
+
+
+    }
+
+    &__box-2 {
+        transition: all .4s;
+        border-radius: 2%;
+        grid-column: 1/2;
+        grid-row: 2/3;
+
+        &:hover {
+            transform: scale(1.07);
+            opacity: 0.6;
+         }
+
+         &__image {
+            
+        }
+
+        &__technologies {
+           
+        }
+
+    }
+
+    &__box-3 {
+        transition: all .4s;
+        border-radius: 2%;
+        grid-column: 1/2;
+        grid-row: 3/4;
+
+        &:hover {
+            transform: scale(1.07);
+            opacity: 0.6;
+         }
+
+         &__image {
+            
+        }
+
+        &__technologies {
+           
+        }
+
+    }
+
+    &__box-4 {
+        transition: all .4s;
+        border-radius: 2%;
+        grid-column: 1/2;
+        grid-row: 4/5;
+
+        &:hover {
+            transform: scale(1.07);
+            opacity: 0.6;
+         }
+
+         &__image {
+           
+        }
+
+        &__technologies {
+          
+        }
+}
+
+}
+
+.section-projects__title {
+    margin-top: 127rem !important;
+}
+
+/*#section-projects {
+    background-color:$primary-darker;
+    height: 112vh;
     width: 100%;
     z-index: 1;
     display: flex;
-    flex-direction: row;
-    margin-top: -40vh;
+    flex-direction: column;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     clip-path: polygon(50% 0, 100% 17%, 100% 100%, 0 100%, 0 17%);
 
     @include respond(tab-land) {
@@ -20,78 +145,41 @@
     }
 }
 
+.section-projects__title {
+    margin-top: 127rem !important;
+}
+
 .project {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-   /* grid-template-columns: 2rem 20rem 20rem 20rem 20rem 2rem;
-    grid-template-rows: 10% 80% 10%;
-
-    @include respond(tab-land) {
-        grid-template-columns:10rem 10rem 10rem 10rem;
-        grid-column-gap: 7rem;
-    }
-
-    @include respond(tab-medium) {
-        grid-template-columns:5rem 5rem 5rem 5rem;
-        grid-column-gap: 10rem;
-        margin-right: 3rem;
-    }
-
-    @include respond(tab-port) {
-        grid-template-columns:2rem 2rem 2rem 2rem;
-        grid-column-gap: 9rem;
-        margin-right: 5rem;
-    }
-
-    @include respond(phone-big) {
-        grid-template-columns: 1rem 3rem 1rem;
-        grid-template-rows: 2rem 2rem 2rem 2rem;
-        grid-column-gap: 0rem;
-        grid-row-gap: 17rem;
-    }*/
+   display: grid;
+   grid-template-columns: repeat(1, 20rem);
+   grid-column-gap: 1rem;
+   grid-row-gap: 1rem;
+   grid-template-rows: repeat(4, 20rem);
+   margin-top: 20rem;
+   justify-content: center;
+   align-content: center;
+   background-color: cadetblue;
+   width: 50%;
+   
 
     &__box {
-        max-width: 15rem;
-        max-height: 15rem;  
+        width: auto;
+        height: 100%;  
         margin-bottom: 2.5rem;
-
-        @include respond(tab-land) {
-            width: 12rem;
-            height: 12rem; 
-        }
-
-        @include respond(tab-medium) {
-            width: 9rem;
-            height: 9rem; 
-        }
-
-        @include respond(tab-port) {
-            width: 8rem;
-            height: 8rem; 
-        }
-
-        @include respond(tab-port) {
-            width: 11rem;
-            height: 11rem; 
-        }
-
-
-
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: crimson;
     }
 
     &__box img {
         height: auto;
-        width: 10rem;
+        width: 30rem;
     }
 
     &__box-1 {
         width: auto;
         height: 90%;
-        /*
-        margin-left: -1.7rem;
-        margin-top: 2rem;*/
         transition: all .4s;
         border-radius: 2%;
 
@@ -99,6 +187,7 @@
             transform: scale(1.07);
             opacity: 0.6;
          }
+
 
     }
 
@@ -106,7 +195,7 @@
         width: 40%;
         height: 20%;
        /* margin-left: -1.7rem;
-        margin-top: 2rem;*/
+        margin-top: 2rem;
         transition: all .4s;
         border-radius: 2%;
 
@@ -114,6 +203,37 @@
             transform: scale(1.07);
             opacity: 0.6;
          }
+
+         &__image {
+            
+        }
+
+        &__technologies {
+           
+        }
+
+    }
+
+    &__box-3 {
+        width: auto;
+        height: 90%;
+       /* margin-left: -1.7rem;
+        margin-top: 2rem;
+        transition: all .4s;
+        border-radius: 2%;
+
+        &:hover {
+            transform: scale(1.07);
+            opacity: 0.6;
+         }
+
+         &__image {
+            
+        }
+
+        &__technologies {
+           
+        }
 
     }
 
@@ -121,7 +241,7 @@
         width: auto;
         height: 90%;
        /* margin-left: -1.7rem;
-        margin-top: 2rem;*/
+        margin-top: 2rem;
         transition: all .4s;
         border-radius: 2%;
 
@@ -129,6 +249,14 @@
             transform: scale(1.07);
             opacity: 0.6;
          }
+
+         &__image {
+           
+        }
+
+        &__technologies {
+          
+        }
 
     }
 
@@ -198,4 +326,4 @@
             vertical-align: middle;
         }
     }
-}
+}*/
