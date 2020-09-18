@@ -1,37 +1,51 @@
 .navigation {
     width: 100%; 
-    height: 3rem;
+    height: 5rem;
     background-color: $low-opacity;
     display: flex;
     justify-content: center;
+    align-items: center;
     z-index: 100;
     position: fixed;
+    transition: all .3s ease-in;
 
     &__link {
         font-size: 12px;
         color: $font-color2;
         font-weight: 500;
+        margin: 0 40px 0 40px;
         letter-spacing: 3px;
-        margin-left: 4rem;
-        margin-top: 1rem;
+        padding: 0 10px 10px 0;
         text-decoration: none;
         text-transform: uppercase;
         transition: all .3s;
 
         @include respond(tab-port) {
-            font-size: 12px;
-            color: $font-color2;
-            font-weight: 500;
-            letter-spacing: 3px;
-            margin-left: 2rem;
-            margin-top: 1rem;
+            margin: 0 30px 0 30px;
+        }
+
+        @include respond(phone-big) {
+            margin: 0 20px 0 20px;
+        }
+
+        @include respond(phone) {
+            margin: 0 5px 0 5px;
         }
     
         &:hover {
-            font-weight: 700;
-            font-size: 15px;
+            box-shadow: 4px 10px 0.5rem rgba(0,0,0,.1);
         }
     }
+}
+
+
+.scrolling-active {
+    background-color: white;
+    box-shadow: -10px rgba(0, 0, 0, 0.158);
+  }
+
+.scrolling-active .navigation {
+    background-color: white;
 }
 
 .currentSection {

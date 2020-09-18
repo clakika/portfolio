@@ -1,4 +1,4 @@
-var navigationLinks = document.querySelectorAll(".navigation__link");
+/*var navigationLinks = document.querySelectorAll(".navigation__link");
 
 function underlineCurrentSectionName() {
 
@@ -15,11 +15,11 @@ function underlineCurrentSectionName() {
     
         currentLink.classList.add('currentSection');
     };
-}
+}*/
 
-underlineCurrentSectionName();
+/*underlineCurrentSectionName();
 
-/*function navOnScroll() {
+function navOnScroll() {
     window.addEventListener('scroll', function(){
         console.log("Scroll11");
         for (var i=0; i < navigationLinks.length; i++) {
@@ -29,9 +29,15 @@ underlineCurrentSectionName();
 }
 navOnScroll();*/
 
-window.addEventListener('scroll', function(){
-    console.log("HE;l!");
+window.addEventListener('scroll', (event) => {
+    let nav = document.querySelector(".navigation");
+    let windowPosition = window.scrollY > 0;
+
+    nav.classList.toggle("scrolling-active", windowPosition);
 });
+
+
+
 
 
 
