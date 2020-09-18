@@ -2,13 +2,43 @@
     background-color:$primary-darker;
     z-index: 1;
     display: flex;
-    height: 330vh;
+    height: 370vh;
     margin-top: -9rem;
     flex-direction: column;
     align-items: center;
-    display: flex;
 
 }
+
+.technologies {
+    align-self: flex-start;
+
+    h4 {
+        font-size: 1.5em;
+        font-weight: 200;
+        text-align: center;
+    }
+
+    p {
+        line-height: 2;
+        text-align: justify;
+    }
+
+    ul {
+        list-style-type: none;
+        line-height: 2;
+        text-align: center;
+    }
+
+    &__list {
+        text-align: center;
+    }
+}
+
+
+.section-projects__title {
+    margin-top: 126rem !important;
+}
+
 
 .project {
 
@@ -18,20 +48,22 @@
     justify-content: center;
     align-content: center;
     grid-template-columns: repeat(1, 100%);
-    grid-row-gap: 3rem;
+    grid-row-gap: 2rem;
     grid-template-rows: repeat(4, 1fr);
 
     &__box img {
         height: auto;
         width: 29rem;
         margin-right: 4rem;
+        box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.137);
     }
 
     &__box {
         display: flex;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
-        background-color: rgba(255, 255, 255, 0.527);
+        background-color: rgba(255, 255, 255, 0.774);
         border: 1rem solid rgba(255, 255, 255, 0.575);
         padding: 1.2rem;
     }
@@ -46,22 +78,6 @@
             transform: scale(1.07);
             opacity: 0.6;
          }
-
-        &__image {
-            
-        }
-
-        &__technologies {
-            align-self: flex-start;
-
-            & h4 {
-                font-size: 1.5em;
-                font-weight: 200;
-                text-align: center;
-            }
-        }
-
-
     }
 
     &__box-2 {
@@ -74,18 +90,6 @@
             transform: scale(1.07);
             opacity: 0.6;
          }
-
-         &__image {
-            
-        }
-
-        &__technologies {
-            & h4 {
-                font-size: 1.5em;
-                font-weight: 200;
-                text-align: center;
-            }
-        }
 
     }
 
@@ -100,18 +104,6 @@
             opacity: 0.6;
          }
 
-         &__image {
-            
-        }
-
-        &__technologies {
-            & h4 {
-                font-size: 1.5em;
-                font-weight: 200;
-                text-align: center;
-            }
-        }
-
     }
 
     &__box-4 {
@@ -124,24 +116,21 @@
             transform: scale(1.07);
             opacity: 0.6;
          }
-
-         &__image {
-           
-        }
-
-        &__technologies {
-            & h4 {
-                font-size: 1.5em;
-                font-weight: 200;
-                text-align: center;
-            }
-        }
     }
 }
 
+.image__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .project__btn {
-    margin-top: 1.5rem;
-    margin-right: 0.3rem;
+
+    width: 10rem;
+    margin-top: 3rem;
+    margin-right: 2rem;
     margin-left: 0.3rem;
     color: $font-color2;
     font-size: 13px;
@@ -153,6 +142,7 @@
     padding: 10px;
     cursor: pointer;
     transition: all .3s;
+
 
     &:hover {
         transform: scale(1.08);
@@ -174,7 +164,7 @@
         border-radius: 5px;
         box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.137);
         background-color: $primary-lightest;
-        padding: 5px;
+        padding: 10px;
         cursor: pointer;
         transition: all .3s;
     }
@@ -189,7 +179,7 @@
         border-radius: 5px;
         box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.137);
         background-color: $primary-lightest;
-        padding: 5px;
+        padding: 10px;
         cursor: pointer;
         transition: all .3s;
         display: flex;
@@ -198,10 +188,12 @@
     }
 }
 
-.section-projects__title {
-    margin-top: 126rem !important;
-}
 
+@media only screen and (max-width: 1330px) {
+    .section-projects__title {
+        margin-top: 125rem !important;
+    }
+}
 
 
 @media only screen and (max-width: 1350px) {
@@ -209,25 +201,134 @@
         width: 20rem;
     }
 
+
     .project {
         width: 70vw;
+
+        &__box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        &__box img {
+            margin: 20px auto;
+            width:30rem;
+        }
+
+        &__1 {
+            margin-bottom: -10rem;
+        }
+
+        &__btn {
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+        }
     }
 
-    .section-projects__title {
-        margin-top: 110rem !important;
+    .technologies {
+        width: 45rem;
+        margin: 0 auto;
     }
+
 
 
     #section-projects {
-        height: 300vh;
+        height: 550vh;
     
     }
 }
 
-@media only screen and (max-width: 1300px) {
-    
+@media only screen and (max-width: 1299px) {
+    .section-projects__title {
+        margin-top: 125rem !important;
+    }
+}
+
+
+@media only screen and (max-width: 1270px) {
+
+    .section-projects__title {
+        margin-top: 98rem !important;
+    }
 
 }
+
+@media only screen and (max-width: 1120px) {
+
+    
+    .project {
+        width: 80vw;
+        grid-row-gap: 2rem;
+    }
+
+}
+
+@media only screen and (max-width: 960px) {
+
+    #section-projects {
+        height: 540vh;
+    }
+
+    .project {
+        row-gap: 1rem;
+        width: 90vw;
+    }
+
+}
+
+@media only screen and (max-width: 850px) {
+    #section-projects {
+        height: 500vh;
+    }
+
+    .project {
+        
+        &__box img {
+            height: auto;
+            width: 24rem;
+        }
+    }
+
+    .technologies {
+        width: 30rem;
+    
+        h4 {
+            font-size: 1.3em;
+        }
+    
+        p {
+            font-size: 0.9em;
+        }
+    
+        ul {
+            font-size: 0.9em;
+            line-height: 2;
+        }
+    
+    }
+
+
+}
+
+@media only screen and (max-width: 670px) {
+
+    #section-projects {
+        height: 520vh;
+    }
+
+    .section-projects__title {
+        margin-top: 97rem !important;
+    }
+
+    .technologies {
+        width: 25rem;
+    }
+
+}
+
 
 /*#section-projects {
     background-color:$primary-darker;
