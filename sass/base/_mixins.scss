@@ -5,11 +5,7 @@
     font-weight: 600;
     align-self: center;
     position: absolute;
-    top: 8.5%;  
-
-    @include respond(phone-big) {
-        top: 17%;
-    }
+    top: 17%;  
 }
 
 @mixin respond($breakpoint) {

@@ -2,16 +2,46 @@
     background-color:$primary-darker;
     z-index: 1;
     display: flex;
-    height: 370vh;
-    margin-top: -9rem;
+    height: 310vh;
+    width: 100%;
+    position: relative;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 
+    h3 {
+        top: 5% !important; 
+
+        @include respond(phone-big) {
+            top: 3.5% !important; 
+        }
+        }
+
+    @include respond(tab-land) {
+        height: 300vh;
+    }
+
+    @include respond(tab-medium) {
+        height: 400vh;
+    }
+
+    @include respond(phone-big) {
+        height: 370vh;
+    }
+}
+
+.section-title {
+    @include sectionTitle;  
 }
 
 .technologies {
     align-self: flex-start;
     color: $font-color2;
+    
+    @include respond(tab-medium) {
+        width: 80%;
+        margin: 3rem auto 1rem auto;
+     }
 
     h4 {
         font-size: 1.5em;
@@ -36,23 +66,29 @@
         font-weight: 500;
     }
 }
-
-
-.section-projects__title {
-    margin-top: 126rem !important;
-}
-
-
 .project {
 
-    width: 60vw;
-    margin-top: 16rem;
+    width: 70vw;
     display: grid;
     justify-content: center;
-    align-content: center;
     grid-template-columns: repeat(1, 100%);
-    grid-row-gap: 2rem;
+    grid-row-gap: 3rem;
     grid-template-rows: repeat(4, 1fr);
+    margin-top: 10rem;
+
+    @include respond(tab-land) {
+        width: 83vw;
+        margin-top: 1rem;
+    }
+
+    @include respond(tab-medium) {
+        width: 83vw;
+        margin-top: 4rem;
+    }
+
+    @include respond(phone-big) {
+        margin-top: 10rem;
+    }
 
     &__box img {
         height: auto;
@@ -60,6 +96,15 @@
         margin-right: 4rem;
         margin-bottom: 2rem;
         box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.137);
+
+        @include respond(tab-medium) {
+            margin-right: 0;
+            margin-bottom: 1rem;
+         }
+
+         @include respond(phone-big) {
+            width: 25rem;
+        }
     }
 
     &__box {
@@ -70,6 +115,10 @@
         background-color: rgba(255, 255, 255, 0.774);
         border: 1rem solid rgba(255, 255, 255, 0.575);
         padding: 1.2rem;
+
+        @include respond(tab-medium) {
+           flex-direction: column;
+        }
     }
 
     &__box-1 {
@@ -130,6 +179,12 @@
     align-items: center;
 }
 
+/*.section-projects__title {
+    
+    @include respond(big-desktop) {
+        margin-top: 30rem;
+    }
+}*/
 
 .project__btn {
     width: 10rem;
@@ -147,6 +202,9 @@
     cursor: pointer;
     transition: all .3s;
 
+    @include respond(tab-medium) {
+        margin-top: 2rem;
+     }
 
     &:hover {
         transform: scale(1.08);
@@ -157,8 +215,10 @@
     &:active {
         border: none;
     }
+}
 
-    @include respond(tab-land) {
+
+    /*@include respond(tab-land) {
         margin-top: 1.5rem;
         margin-right: 0.5rem;
         color: $font-color2;
@@ -189,10 +249,10 @@
         display: flex;
         display: table-cell;
         vertical-align: middle;
-    }
-}
+    }*/
 
 
+/*
 @media only screen and (max-width: 1330px) {
     .section-projects__title {
         margin-top: 125rem !important;
@@ -205,9 +265,13 @@
     }
 }
 
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 1520px) {
     #section-projects {
         height: 400vh;
+    }
+
+    .section-projects__title {
+        margin-top: 102rem !important;
     }
 }
 
@@ -359,3 +423,4 @@
     }
 
 }
+*/

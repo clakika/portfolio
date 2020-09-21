@@ -5,12 +5,11 @@
     z-index: 1;
     bottom: 0;
     display: flex;
-    margin-top: -5vh;
     flex-direction: column;
     position: relative;
     justify-content: center;
     align-content: center;
-    clip-path: polygon(50% 0, 100% 17%, 100% 100%, 0 100%, 0 17%);
+    /*clip-path: polygon(50% 0, 100% 17%, 100% 100%, 0 100%, 0 17%);*/
 }
 
 #contacts-title {
