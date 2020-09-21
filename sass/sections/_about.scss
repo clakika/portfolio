@@ -20,10 +20,6 @@
         height: 100vh;
     }
 
-    
-    @include respond(tab-medium) {
-        
-    }
 
     
     @include respond(tab-port) {
@@ -42,7 +38,9 @@
 }
 
 .section-title {
-    @include sectionTitle;  
+    @include sectionTitle; 
+    
+    
 }
 
 .container-about {
@@ -80,29 +78,18 @@
         color: $font-color2;
         line-height: 2;
 
+        @include respond(phone-small) {
+            font-size: 5px;
+        }
+
 
         @include respond(tab-port) {
             font-size: 10px;
-            letter-spacing: 1px;
-            font-weight: 500;
-            color: $font-color2;
-            line-height: 2;
         }
 
         @include respond(tab-medium) {
             font-size: 11px;
-            letter-spacing: 1px;
-            font-weight: 500;
-            color: $font-color2;
-            line-height: 2;
-        }
-
-        @include respond(tab-land) {
-            font-size: 15px;
-            letter-spacing: 1px;
-            font-weight: 500;
-            color: $font-color2;
-            line-height: 2;
+            
         }
     }
 

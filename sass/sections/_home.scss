@@ -23,7 +23,6 @@
     @include respond(tab-land) {
         height: 100vh;
     }
-
 }
 
     #heading-box {
@@ -35,15 +34,28 @@
         color: $font-color;
         border-radius: 4px;
 
+        @include respond(phone-small) {
+            line-height: 3rem;
+            width: 90%;
+        }
+
         &__text {
             font-size: 50px;
             font-weight: 200;
             letter-spacing: 4px;
+
+            @include respond(phone-small) {
+                font-size: 30px;
+            }
         }
 
         &__subtext {
-            font-size: 25px;
+            font-size: 30px;
             font-weight: 400;
             letter-spacing: 4px;
+
+            @include respond(phone-small) {
+                font-size: 15px;
+            }
         }
     }

@@ -15,6 +15,10 @@
         @include respond(phone-big) {
             top: 3.5% !important; 
         }
+
+        @include respond(phone-small) {
+            top: 2.2% !important; 
+        }
         }
 
     @include respond(tab-land) {
@@ -27,6 +31,10 @@
 
     @include respond(phone-big) {
         height: 370vh;
+    }
+
+    @include respond(phone-small) {
+        height: 500vh;
     }
 }
 
@@ -43,15 +51,31 @@
         margin: 3rem auto 1rem auto;
      }
 
+     @include respond(phone-small) {
+        margin: 2rem auto 1rem auto;
+        width: 100%;
+
+    }
+
     h4 {
         font-size: 1.5em;
         font-weight: 500;
         text-align: center;
+
+        @include respond(phone-small) {
+            font-size: 1em;
+
+        }
     }
 
     p {
         line-height: 2;
         text-align: justify;
+
+        @include respond(phone-small) {
+            font-size: 0.8em;
+
+        }
     }
 
     ul {
@@ -59,11 +83,21 @@
         line-height: 2;
         text-align: center;
         font-weight: 500;
+
+        @include respond(phone-small) {
+            font-size: 0.8em;
+
+        }
     }
 
     &__list {
         text-align: center !important;
         font-weight: 500;
+
+        @include respond(phone-small) {
+            font-size: 0.8em;
+
+        }
     }
 }
 .project {
@@ -104,6 +138,10 @@
 
          @include respond(phone-big) {
             width: 25rem;
+        }
+
+        @include respond(phone-small) {
+            width: 15rem;
         }
     }
 
@@ -205,6 +243,13 @@
     @include respond(tab-medium) {
         margin-top: 2rem;
      }
+
+     @include respond(phone-small) {
+        width: 7rem;
+        padding: 8px;
+        margin: 10px auto;
+        font-size: 10px;
+    }
 
     &:hover {
         transform: scale(1.08);
