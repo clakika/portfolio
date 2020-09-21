@@ -29,13 +29,14 @@
         }
 
         @include respond(phone) {
-            margin: 0 2px 0 2px;
+            margin: 0 4px 0 4px;
         }
 
         @include respond(phone-small) {
             font-size: 9px;
-            margin: 0px 1px 0 1px;
+            padding:   0;
         }
+
 
     
         &:hover {

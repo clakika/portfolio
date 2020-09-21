@@ -99,8 +99,14 @@
     @include respond(phone-small) {
         margin-top: 12rem;
         grid-row-gap: 1rem;
+        width: 90vw;
     }
 
+    @include respond(big-desktop) {
+        width: 50vw;
+    }
+
+    
 
     &__box img {
         height: auto;

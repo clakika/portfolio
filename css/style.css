@@ -333,7 +333,11 @@ body {
   @media only screen and (max-width: 27em) {
     .project {
       margin-top: 12rem;
-      grid-row-gap: 1rem; } }
+      grid-row-gap: 1rem;
+      width: 90vw; } }
+  @media only screen and (min-width: 112.5em) {
+    .project {
+      width: 50vw; } }
   .project__box img {
     height: auto;
     width: 30rem;
@@ -750,11 +754,11 @@ body {
         margin: 0 20px 0 20px; } }
     @media only screen and (max-width: 37.5em) {
       .navigation__link {
-        margin: 0 2px 0 2px; } }
+        margin: 0 4px 0 4px; } }
     @media only screen and (max-width: 27em) {
       .navigation__link {
         font-size: 9px;
-        margin: 0px 1px 0 1px; } }
+        padding: 0; } }
     .navigation__link:hover {
       box-shadow: 4px 10px 0.5rem rgba(0, 0, 0, 0.1); }
 
