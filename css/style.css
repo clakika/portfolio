@@ -283,7 +283,7 @@ body {
       height: 370vh; } }
   @media only screen and (min-width: 25.87em) {
     #section-projects {
-      height: 500vh; } }
+      height: 410vh; } }
 
 .section-title {
   font-size: 25px;
@@ -352,6 +352,9 @@ body {
   @media only screen and (max-width: 43.1em) {
     .project {
       margin-top: 10rem; } }
+  @media only screen and (min-width: 25.87em) {
+    .project {
+      margin-top: 4rem; } }
   .project__box img {
     height: auto;
     width: 30rem;

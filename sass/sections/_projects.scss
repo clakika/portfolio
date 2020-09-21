@@ -34,7 +34,7 @@
     }
 
     @include respond(phone-small) {
-        height: 500vh;
+        height: 410vh;
     }
 }
 
@@ -122,6 +122,10 @@
 
     @include respond(phone-big) {
         margin-top: 10rem;
+    }
+
+    @include respond(phone-small) {
+        margin-top: 4rem;
     }
 
     &__box img {
