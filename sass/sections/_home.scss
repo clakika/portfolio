@@ -1,5 +1,4 @@
 #section-home {
-    /*background-image: url("/img/background.jpg");*/
     background-image: linear-gradient(to right bottom, 
                             
                             rgb(202, 165, 150),
@@ -25,37 +24,37 @@
     }
 }
 
-    #heading-box {
-        background-color: $low-opacity;
-        align-self: center;
-        padding: 2rem;
-        text-align: center;
-        line-height: 4rem;
-        color: $font-color;
-        border-radius: 4px;
+#heading-box {
+background-color: $low-opacity;
+align-self: center;
+padding: 2rem;
+text-align: center;
+line-height: 4rem;
+color: $font-color;
+border-radius: 4px;
 
-        @include respond(phone-small) {
-            line-height: 3rem;
-            width: 90%;
-        }
+@include respond(phone-small) {
+    line-height: 3rem;
+    width: 90%;
+}
 
-        &__text {
-            font-size: 50px;
-            font-weight: 200;
-            letter-spacing: 4px;
+&__text {
+    font-size: 50px;
+    font-weight: 200;
+    letter-spacing: 4px;
 
-            @include respond(phone-small) {
-                font-size: 30px;
-            }
-        }
-
-        &__subtext {
-            font-size: 30px;
-            font-weight: 400;
-            letter-spacing: 4px;
-
-            @include respond(phone-small) {
-                font-size: 15px;
-            }
-        }
+    @include respond(phone-small) {
+        font-size: 30px;
     }
+}
+
+&__subtext {
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 4px;
+
+    @include respond(phone-small) {
+        font-size: 15px;
+    }
+}
+}

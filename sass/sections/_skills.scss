@@ -36,13 +36,9 @@
     transition: all .2s;
     margin-top: 20rem;
 
-    @include respond(tab-medium) {
-        
-     }
-
      @include respond(phone-small) {
-        grid-column-gap: 5px;
-        grid-row-gap: 40px;
+        grid-column-gap: 10px;
+        grid-row-gap: 45px;
         grid-template-columns: 3rem 3rem 3rem 3rem 3rem;
         margin-top: 12rem;
     }
@@ -71,6 +67,10 @@
         line-height: 1.2rem;
         justify-self: center;
         align-self: center;
+
+        @media only screen and (max-width: 430px) {
+            font-size: 0.5em;
+        }
     }
 
     &__effect:hover &__text {
@@ -142,15 +142,61 @@
     &__8 {
         grid-row: 2/3;
         grid-column: 3/4;
+
+        & img {
+            max-width: 80px;
+            height: auto;
+            filter: invert(83%) sepia(39%) saturate(190%) hue-rotate(326deg) brightness(93%) contrast(83%);     
+            
+            @media only screen and (max-width: 1084px) {
+                width: 56px;
+                height: auto;
+            }
+
+            @media only screen and (max-width: 433px) {
+                width: 42px;
+                height: auto;
+            }
+        }
     }
 
     &__9 {
+        max-width: 80px;
+        height: auto;
         grid-row: 2/3;
         grid-column: 4/5;
+
+        & img {
+            filter: invert(83%) sepia(39%) saturate(190%) hue-rotate(326deg) brightness(93%) contrast(83%);  
+            
+            @media only screen and (max-width: 1084px) {
+                width: 56px;
+                height: auto;
+            }
+
+            @media only screen and (max-width: 433px) {
+                width: 42px;
+                height: auto;
+            }
+        }
     }
 
     &__10 {
         grid-row: 2/3;
         grid-column: 5/6;
+
+        & img {
+            filter: invert(83%) sepia(39%) saturate(190%) hue-rotate(326deg) brightness(93%) contrast(83%);  
+            
+            @media only screen and (max-width: 1084px) {
+                width: 56px;
+                height: auto;
+            }
+
+            @media only screen and (max-width: 433px) {
+                width: 42px;
+                height: auto;
+            }
+        }
     }
 }

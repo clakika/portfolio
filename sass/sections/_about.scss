@@ -9,26 +9,13 @@
     align-items: center;
     flex-direction: column;
     /*clip-path: polygon(0 17%, 50% 0, 100% 17%, 100% 100%, 50% 83%, 0 100%);*/
-
-    
+  
     @include respond(tab-land) {
         height: 100vh;
     }
-
-
-    
-    @include respond(tab-port) {
-        
-    }
-
     
     @include respond(phone-big) {
         height: 100vh;
-    }
-
-    
-    @include respond(phone) {
-        
     }
 }
 

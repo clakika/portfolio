@@ -30,6 +30,7 @@
 .technologies {
     align-self: flex-start;
     color: $font-color2;
+    margin-top: 1rem;
     
     @include respond(tab-medium) {
         width: 80%;
@@ -111,7 +112,8 @@
     &__box img {
         height: auto;
         width: 30rem;
-        margin-right: 4rem;
+        margin-left: 0;
+        margin-right: 6rem;
         margin-bottom: 2rem;
         box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.137);
 
@@ -201,17 +203,11 @@
     align-items: center;
 }
 
-/*.section-projects__title {
-    
-    @include respond(big-desktop) {
-        margin-top: 30rem;
-    }
-}*/
-
 .project__btn {
-    width: 10rem;
+    width: 8rem;
     margin-top: 3rem;
-    margin-right: 2rem;
+    margin-right: 5rem;
+    margin-bottom: 1rem;
     margin-left: 0.3rem;
     color: $font-color2;
     font-size: 13px;
@@ -236,220 +232,10 @@
     }
 
     &:hover {
-        transform: scale(1.08);
-        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.137);
-        border: 2px
+        opacity: 0.5;
     }
 
     &:active {
         border: none;
     }
 }
-
-
-    /*@include respond(tab-land) {
-        margin-top: 1.5rem;
-        margin-right: 0.5rem;
-        color: $font-color2;
-        font-size: 10px;
-        font-weight: 600;
-        border: none;
-        border-radius: 5px;
-        box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.137);
-        background-color: $primary-lightest;
-        padding: 10px;
-        cursor: pointer;
-        transition: all .3s;
-    }
-
-    @include respond(tab-medium) {
-        margin-top: 1rem;
-        align-self: center;
-        color: $font-color2;
-        font-size: 10px;
-        font-weight: 600;
-        border: none;
-        border-radius: 5px;
-        box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.137);
-        background-color: $primary-lightest;
-        padding: 10px;
-        cursor: pointer;
-        transition: all .3s;
-        display: flex;
-        display: table-cell;
-        vertical-align: middle;
-    }*/
-
-
-/*
-@media only screen and (max-width: 1330px) {
-    .section-projects__title {
-        margin-top: 125rem !important;
-    }
-}
-
-@media only screen and (max-width: 1600px) {
-    #section-projects {
-        height: 380vh;
-    }
-}
-
-@media only screen and (max-width: 1520px) {
-    #section-projects {
-        height: 400vh;
-    }
-
-    .section-projects__title {
-        margin-top: 102rem !important;
-    }
-}
-
-
-@media only screen and (max-width: 1400px) {
-    #section-projects {
-        height: 350vh;
-    }
-
-    .project {
-        width: 70vw;
-    }
-}
-
-
-@media only screen and (max-width: 1350px) {
-    .project__box img {
-        width: 20rem;
-    }
-
-    #section-projects {
-        height: 500vh;
-    }
-
-
-    .project {
-        width: 70vw;
-
-        &__box {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
-
-        &__box img {
-            margin: 20px auto;
-            width:30rem;
-        }
-
-        &__1 {
-            margin-bottom: -10rem;
-        }
-
-        &__btn {
-            margin-top: 1rem;
-            margin-bottom: 2rem;
-        }
-    }
-
-    .technologies {
-        width: 45rem;
-        margin: 0 auto;
-    }
-
-
-
-    #section-projects {
-        height: 510vh;
-    
-    }
-}
-
-@media only screen and (max-width: 1299px) {
-    .section-projects__title {
-        margin-top: 125rem !important;
-    }
-}
-
-
-@media only screen and (max-width: 1270px) {
-
-    .section-projects__title {
-        margin-top: 98rem !important;
-    }
-
-}
-
-@media only screen and (max-width: 1120px) {
-
-    
-    .project {
-        width: 80vw;
-        grid-row-gap: 2rem;
-    }
-
-}
-
-@media only screen and (max-width: 960px) {
-
-    #section-projects {
-        height: 510vh;
-    }
-
-    .project {
-        row-gap: 2rem;
-        width: 90vw;
-    }
-
-}
-
-@media only screen and (max-width: 850px) {
-    #section-projects {
-        height: 480vh;
-    }
-
-    .project {
-        
-        &__box img {
-            height: auto;
-            width: 24rem;
-        }
-    }
-
-    .technologies {
-        width: 30rem;
-    
-        h4 {
-            font-size: 1.3em;
-        }
-    
-        p {
-            font-size: 0.9em;
-        }
-    
-        ul {
-            font-size: 0.9em;
-            line-height: 2;
-        }
-    
-    }
-
-
-}
-
-@media only screen and (max-width: 670px) {
-
-    #section-projects {
-        height: 490vh;
-    }
-
-    .section-projects__title {
-        margin-top: 97rem !important;
-    }
-
-    .technologies {
-        width: 25rem;
-    }
-
-}
-*/
