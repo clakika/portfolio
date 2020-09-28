@@ -167,6 +167,8 @@
         grid-column: 4/5;
 
         & img {
+            max-width: 80px;
+            height: auto;
             filter: invert(83%) sepia(39%) saturate(190%) hue-rotate(326deg) brightness(93%) contrast(83%);  
             
             @media only screen and (max-width: 1084px) {
@@ -186,6 +188,8 @@
         grid-column: 5/6;
 
         & img {
+            max-width: 80px;
+            height: auto;
             filter: invert(83%) sepia(39%) saturate(190%) hue-rotate(326deg) brightness(93%) contrast(83%);  
             
             @media only screen and (max-width: 1084px) {
