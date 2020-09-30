@@ -67,6 +67,7 @@
         line-height: 1.2rem;
         justify-self: center;
         align-self: center;
+        z-index: 20;
 
         @media only screen and (max-width: 430px) {
             font-size: 0.5em;
@@ -143,19 +144,25 @@
         grid-row: 2/3;
         grid-column: 3/4;
 
-        & img {
-            max-width: 80px;
-            height: auto;
-            filter: invert(83%) sepia(39%) saturate(190%) hue-rotate(326deg) brightness(93%) contrast(83%);     
+        & .icon {
+            z-index: 10;
             
-            @media only screen and (max-width: 1084px) {
-                width: 56px;
-                height: auto;
-            }
+            & span:before {
+                margin-left: 0;
+                font-size: 85px;
+                color: $primary-dark;
 
-            @media only screen and (max-width: 433px) {
-                width: 42px;
-                height: auto;
+                @media only screen and (max-width: 1084px) {
+                    font-size: 56px;
+                }
+    
+                @media only screen and (max-width: 433px) {
+                    font-size: 42px;
+                }
+            }
+            
+            &:hover span:before {
+                color: $low-opacity;
             }
         }
     }
@@ -166,19 +173,25 @@
         grid-row: 2/3;
         grid-column: 4/5;
 
-        & img {
-            max-width: 80px;
-            height: auto;
-            filter: invert(83%) sepia(39%) saturate(190%) hue-rotate(326deg) brightness(93%) contrast(83%);  
+        & .icon {
+            z-index: 10;
             
-            @media only screen and (max-width: 1084px) {
-                width: 56px;
-                height: auto;
-            }
+            & span:before {
+                margin-left: 0;
+                font-size: 85px;
+                color: $primary-dark;
 
-            @media only screen and (max-width: 433px) {
-                width: 42px;
-                height: auto;
+                @media only screen and (max-width: 1084px) {
+                    font-size: 56px;
+                }
+    
+                @media only screen and (max-width: 433px) {
+                    font-size: 42px;
+                }
+            }
+            
+            &:hover span:before {
+                color: $low-opacity;
             }
         }
     }
@@ -187,19 +200,25 @@
         grid-row: 2/3;
         grid-column: 5/6;
 
-        & img {
-            max-width: 80px;
-            height: auto;
-            filter: invert(83%) sepia(39%) saturate(190%) hue-rotate(326deg) brightness(93%) contrast(83%);  
+        & .icon {
+            z-index: 10;
             
-            @media only screen and (max-width: 1084px) {
-                width: 56px;
-                height: auto;
-            }
+            & span:before {
+                margin-left: 0;
+                font-size: 85px;
+                color: $primary-dark;
 
-            @media only screen and (max-width: 433px) {
-                width: 42px;
-                height: auto;
+                @media only screen and (max-width: 1084px) {
+                    font-size: 56px;
+                }
+    
+                @media only screen and (max-width: 433px) {
+                    font-size: 42px;
+                }
+            }
+            
+            &:hover span:before {
+                color: $low-opacity;
             }
         }
     }
