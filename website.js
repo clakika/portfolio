@@ -36,6 +36,19 @@ window.addEventListener('scroll', (event) => {
     nav.classList.toggle("scrolling-active", windowPosition);
 });
 
+window.addEventListener('click', (event) => {
+    const mobileNavigation = document.querySelector('.navigation__mobile');
+    const navigationList = document.querySelector('.navigation__list');
+    const navigationLink = document.querySelectorAll(".navigation__link");
+
+    mobileNavigation.classList.toggle("open");
+
+    navigationList.classList.toggle("open");
+    navigationLink.forEach(link => {
+        link.classList.toggle("fade");
+    })
+})
+
 
 
 

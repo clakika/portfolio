@@ -44,7 +44,9 @@
 
      @media only screen and (max-width:422px) {
         width: 15rem;
-        margin-left: 0rem;
+        margin-left: 2.5rem;
+        height: 2rem;
+        margin-top: 2rem;
      }
      
 
@@ -301,7 +303,7 @@
      @include respond(phone-small) {
         width: 7rem;
         padding: 8px;
-        margin: 10px auto;
+        margin:10px 10px 0 0;
         font-size: 10px;
     }
 
