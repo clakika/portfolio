@@ -13,6 +13,10 @@
     @include respond(tab-land) {
         height: 100vh;
     }
+
+    @include respond(tab-medium) {
+        height: 120vh;
+    }
     
     @include respond(phone-big) {
         height: 100vh;
@@ -33,9 +37,18 @@
     align-items: center;
     flex-direction: row-reverse;
     margin-top: 4rem;
+    position: relative;
 
     @include respond(tab-land) {
         width: 95%;
+    }
+
+    @include respond(tab-medium) {
+        margin-top: 10rem;
+    }
+
+    @include respond(phone-big) {
+        margin-top: 4rem;
     }
 
     &__text-box {
@@ -66,39 +79,35 @@
 
 
         @include respond(tab-port) {
-            font-size: 10px;
+            font-size: 13px;
         }
 
-        @include respond(tab-medium) {
-            font-size: 11px;
-            
-        }
+
     }
 
-    &__image-shape {
-        width: 26rem;
-        height: 26rem;
-        border-radius: 50%;
-        overflow: hidden;
+    &__figure {
+        position: absolute;
+        height: 25rem;
+        width: 18rem;
+        border: 1rem solid $primary-darkest;
+        transform: translate(20rem, -4rem);
+        opacity: 0.7;
 
         @include respond(phone-big) {
             display: none;
         }
-
-        @include respond(tab-land) {
-            width: 22rem;
-            height: 22rem;
-        }
-
-        @include respond(tab-port) {
-            width: 17rem;
-            height: 17rem;
-        }
     }
 
     &__image {
-        width: 90%;
-        transform: translate(2rem, -2rem);
+        height:25rem;
+        width:auto;
+        max-width:500px;
+        transform: translate(2rem, 0rem);
+        box-shadow: 10px  10px 1px 1px $primary-darkest;
+
+        @include respond(phone-big) {
+            display: none;
+        }
     }
 }
 

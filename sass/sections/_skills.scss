@@ -1,6 +1,6 @@
 #section-skills {
     background-color:$primary-light;
-    height: 100vh;
+    height: 90vh;
     width: 100%;
     z-index: 1;
     display: flex;
@@ -34,13 +34,25 @@
     text-align: center;
     position: relative;
     transition: all .2s;
-    margin-top: 20rem;
+    margin-top: 15rem;
+
+    @include respond(tab-medium) {
+        grid-column-gap: 15px;
+        grid-row-gap: 45px;
+        grid-template-columns: 4rem 4rem 4rem 4rem 4rem;
+        margin-top: 12rem;
+    }
 
      @include respond(phone-small) {
         grid-column-gap: 10px;
         grid-row-gap: 45px;
         grid-template-columns: 3rem 3rem 3rem 3rem 3rem;
         margin-top: 12rem;
+    }
+
+    @include respond(tab-medium) {
+        height: 50%;
+        margin-top: 10rem;
     }
     
     &__image {
