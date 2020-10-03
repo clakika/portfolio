@@ -32,15 +32,12 @@
 .button__box {
     margin-top: -1rem;
     
-
-    @include respond(tab-medium) {
-        width: 27rem;
-        margin-left: 3rem;
-     }
-
-     @include respond(phone-large) {
-        margin-left: 5rem;
-     }
+    @media only screen and (max-width:1090px) {
+        width: 30rem;
+        margin-left: 10rem;
+        height: 2rem;
+        margin-top: 2rem;
+    }
 
      @media only screen and (max-width:422px) {
         width: 15rem;
@@ -288,13 +285,17 @@
     font-size: 13px;
     font-weight: 600;
     border: none;
-    border-radius: 5px;
-    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.137);
+    border-radius: 1px;
+    box-shadow: 4px 4px 1px rgba(0,0,0,.1);
     background-color: $primary-lightest;
     padding: 10px;
     cursor: pointer;
     transition: all .3s;
     text-decoration: none;
+
+    @media only screen and (max-width: 1090px) {
+        margin: 0 20px 0 20px;
+    }
 
     @include respond(tab-medium) {
         margin-top: 2rem;

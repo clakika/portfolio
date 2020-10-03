@@ -350,10 +350,12 @@ body {
 
 .button__box {
   margin-top: -1rem; }
-  @media only screen and (max-width: 68em) {
+  @media only screen and (max-width: 1090px) {
     .button__box {
-      width: 27rem;
-      margin-left: 3rem; } }
+      width: 30rem;
+      margin-left: 10rem;
+      height: 2rem;
+      margin-top: 2rem; } }
   @media only screen and (max-width: 422px) {
     .button__box {
       width: 15rem;
@@ -536,13 +538,16 @@ body {
   font-size: 13px;
   font-weight: 600;
   border: none;
-  border-radius: 5px;
-  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.137);
+  border-radius: 1px;
+  box-shadow: 4px 4px 1px rgba(0, 0, 0, 0.1);
   background-color: #f7e7e4;
   padding: 10px;
   cursor: pointer;
   transition: all .3s;
   text-decoration: none; }
+  @media only screen and (max-width: 1090px) {
+    .project__btn {
+      margin: 0 20px 0 20px; } }
   @media only screen and (max-width: 68em) {
     .project__btn {
       margin-top: 2rem; } }
@@ -630,20 +635,11 @@ body {
       .navigation__link {
         margin-left: 0.7rem;
         padding: 1rem 1.5rem 1rem 1.5rem; } }
-    @media only screen and (max-width: 56.25em) {
-      .navigation__link {
-        margin: 0 30px 0 30px; } }
-    @media only screen and (max-width: 43.1em) {
-      .navigation__link {
-        margin: 0 20px 0 20px; } }
-    @media only screen and (max-width: 37.5em) {
-      .navigation__link {
-        margin: 0 8px 0 8px; } }
     .navigation__link:hover {
       box-shadow: 4px 4px 1px rgba(0, 0, 0, 0.1);
       background-color: rgba(255, 255, 255, 0.36); }
 
-@media only screen and (max-width: 520px) {
+@media only screen and (max-width: 664px) {
   .line {
     width: 1.7rem;
     height: 3px;
