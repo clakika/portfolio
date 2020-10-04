@@ -65,12 +65,12 @@
     width: 50%;
 
     @media only screen and (max-width:1390px) {
-        width: 40%;
+        width: 70%;
         margin-left: 1rem;
-      }
-    
+    }
+
     @include respond(tab-medium) {
-        width: 80%;
+        width: 50%;
         margin: 3rem auto 1rem auto;
      }
 
@@ -215,7 +215,6 @@
 
         @media only screen and (max-width: 558px) {
             padding: 1rem 0 0 0;
-
         }
     }
 
@@ -299,9 +298,9 @@
 
     @include respond(tab-medium) {
         margin-top: 2rem;
-     }
+    }
 
-     @include respond(phone-small) {
+    @include respond(phone-small) {
         width: 7rem;
         padding: 8px;
         margin:10px 10px 0 0;

@@ -381,11 +381,11 @@ body {
   width: 50%; }
   @media only screen and (max-width: 1390px) {
     .technologies {
-      width: 40%;
+      width: 70%;
       margin-left: 1rem; } }
   @media only screen and (max-width: 68em) {
     .technologies {
-      width: 80%;
+      width: 50%;
       margin: 3rem auto 1rem auto; } }
   @media only screen and (max-width: 27em) {
     .technologies {
